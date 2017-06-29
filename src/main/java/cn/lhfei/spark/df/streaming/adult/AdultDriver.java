@@ -40,6 +40,7 @@ public class AdultDriver {
 	public static void main(String[] args) {
 		SparkSession spark = SparkSession.builder()
 				.appName("Adult Data Set")
+				.master("local")
 				.getOrCreate();
 		
 		
